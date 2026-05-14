@@ -5,7 +5,7 @@ on:
     # ╔═══════════════════════════════════════════════════════════════╗
     # ║  CHANGE THE LINE BELOW to set when your script runs          ║
     # ║                                                                ║
-    # ║  Format:  '25 1 * * *'                                  ║
+    # ║  Format:  '0 10 * * *'                                  ║
     # ║                                                                ║
     # ║  Examples:                                                     ║
     # ║    '0 9 * * *'   = 9:00 AM UTC daily                          ║
