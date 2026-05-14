@@ -1,4 +1,4 @@
-
+import os
 import random
 import smtplib
 from datetime import datetime
@@ -27,8 +27,8 @@ if today_tuple in birthday_data:
     with open(file_path) as letter_file:
         content = letter_file.read()
         content = content.replace("[NAME]",birthday_data[today_tuple]["name"])
-    my_email = "maiccuzzunottoppe@gmail.com"
-    password = "bdqrlnpsacdfwjim"
+    my_email = os.environ.get ("MY_EMAIL")
+    password = os.environ.get ("MY_PASSWORD")
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
         connection.login(user=my_email, password=password)
